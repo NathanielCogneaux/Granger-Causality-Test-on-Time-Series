@@ -1,18 +1,7 @@
-'''
-Granger Causality test is basically an econometric hypothetical test for verifying the usage of one variable in forecasting another in multivariate time series data with a particular lag.
-A prerequisite for performing the Granger Causality test is that the data need to be stationary i.e it should have a constant mean, constant variance, and no seasonal component.
-
-Transform the non-stationary data to stationary data by differencing it, either first-order or second-order differencing (here we even do it with fractional derivation to lose as
-less information as possible). Do not proceed with the Granger causality test if the data is not stationary after second-order differencing
-
-We test if the data is stationary with an augmented Dickey–Fuller test (ADF).
-'''
-
 import numpy as np
 import os
 import re
 
-#----------------------------Fractional derivatives Algorithm Py from Jupyter Notebook------------------------------------------------------------------------------------
 '''
 from: http://www.mirzatrokic.ca/FILES/codes/fracdiff.py
 small modification: wrapped 2**np.ceil(...) around int()
