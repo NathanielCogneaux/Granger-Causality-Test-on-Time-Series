@@ -2,7 +2,7 @@
 
 This repository contains a small piece of code I wanted to preserve for future reference—and to share with anyone interested in the **Granger causality test** and the preprocessing required to apply it effectively.
 
-⚠**Note:** The code is not directly ready for production use; it's more of a conceptual prototype or "food for thought."
+**Note:** The code is not directly ready for production use; it's more of a conceptual prototype or "food for thought."
 
 ## Overview
 
@@ -10,7 +10,7 @@ The **Granger causality test** is an econometric hypothesis test used to determi
 
 However, like many statistical tests in time-series analysis, the Granger test requires the input data to be **stationary**—that is, the series must have a constant mean, constant variance, and no seasonal structure.
 
-## 🛠️ Methodology
+## 🛠Methodology
 
 This project proposes a preprocessing methodology to transform **non-stationary data into stationary data** using **fractional differencing**:
 
